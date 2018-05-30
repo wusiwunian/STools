@@ -1,7 +1,7 @@
 #!/bin/bash
-file_name="win7-1.img"
-total_size=40480
-current_size=`du win7.img -m | awk '{print $1}'` > /dev/null
+file_name=$1
+total_size=$2
+current_size=`du $1 -m | awk '{print $1}'` > /dev/null
 echo $current_size
 
 num=0  
